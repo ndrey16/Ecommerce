@@ -1,0 +1,79 @@
+.banner-content {
+	height: 100px;
+	background-color: rgba(142, 3, 54, .5);
+	background-size: cover;
+	border-top: 5px solid #FDC6B3;
+	border-bottom: 5px solid salmon;
+}
+.banner-heading h1{
+	margin-top: 30px;
+	color: #952D0B;
+	text-align: center;
+	transition: 0.4s;
+}
+.banner-heading:hover h1 {
+	color: #fff;
+	opacity: 0.7;
+}
+
+.featured {
+	width: 80%;
+}
+.content h1 {
+	padding-top: 75px;
+	margin-left:100px;
+	position: relative;
+	color: #952D0B;
+}
+.content ul li {
+	margin-top: 5px;
+	margin-left: 90px;
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	color: #29022B;
+	overflow: hidden;
+}
+span {
+	color: #952D0B;
+	font-size: 15px;
+}
+.content p,strong{
+	padding-top: 15px;
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 25px;
+	margin-bottom: 15px;
+}
+.content img {
+	margin: 0 auto;
+	padding-left: 50px;
+	max-width: 700px;
+}
+h5 {
+	color: #952D0B;
+}
+em {
+	font-size: 15px;
+}
+.content a {
+	border: 2px solid #7B357B;
+	background-color: #B659B6;
+}
+.content a:hover {
+	background-color: #7B357B;
+}
+
+
+@media (max-width: 768px) { 
+	.mobile-menu {
+		display: block;
+	}
+	header ul {
+		display: none; /*ketika ukuran layar kecil ul hilang */
+	}
+	.content img {
+		width: 75%;
+	}
+}

@@ -1,0 +1,422 @@
+/* ===================================== HALAMAN UTAMA ===================================== */
+* {  
+	padding: 0;
+	margin: 0;
+	font-family:'Quicksand', sans-serif;
+} 
+body{
+	background-image: linear-gradient( 299.1deg, #cb91fa 39.4%, rgba(239,110,51,1) 93.9% );
+}
+
+
+header {
+	height: 85px;
+	padding-bottom: 10px;
+
+
+}
+header h1 {
+	display: inline-block;
+	float: left;
+}
+header ul {
+	float: right;
+}
+header h1 a:hover {
+	color: #fff;
+}
+header h1 a {
+	transition: .2s;
+}
+header ul li {
+	padding: 24px;
+	font-size: 18px;
+	display: inline-block; 
+}
+header ul li a:hover {
+	color: #fff;
+}
+header ul li a {
+	transition: .2s;
+}
+a {
+	text-decoration: none; /*menghilangkan garis bawah */
+}
+.container {
+	width: 80%; 
+	margin: 0 auto;
+}
+.container::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*-----sidebar-------- */
+.mobile-menu {
+	float: right;
+	display: none;
+	padding: 20px;
+}
+.mobile-menu:hover { 
+	cursor: pointer; /*ketika disentuh cursor jadi berubah pointer */
+}
+#check {
+	display: none; /*menghilangkan tanda checkbox */
+}
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: -300px;
+	width: 250px;
+	background-color: rgba(157, 85, 161, .9);
+	transition: .3s;
+	z-index: 1;
+}
+.sidebar ul li a {
+	color: #fff;
+}
+.sidebar ul li {
+	padding: 24px;
+	transition: .3s;
+	transition-property: background-color;
+}
+.sidebar ul li:hover {
+	background-color: #090201;
+}
+#check:checked ~ .sidebar {
+	left: 0;
+}
+
+/* -------background banner----------*/
+.banner {
+	height: 350px;
+	background-image: url('bgheader.png');
+	background-size: cover;
+	border-top: 5px solid #FDC6B3;
+	border-bottom: 5px solid #DB76AD;
+}
+.text-banner{
+	padding: 125px 10px;
+}
+/* banner text */
+.text-banner h1{
+	text-align: center;
+	color: #CB7BD7;
+}
+.text-banner span {
+	color: #F6A0AA;
+	font-size: 36px;
+}
+
+/*----------about------------ */
+section h3{
+	padding-bottom: 20px;
+	text-align: center;
+	position: relative;
+}
+section h3::before{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	width: 100px;
+	height: 3px;
+	background-color: #FC7E93;
+	left: calc(50% - 50px);
+}
+section h3::after{
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 10px ;
+	width: 40px;
+	height: 4px;
+	background-color: #F552F9;
+	left: calc(50% - 20px);
+}
+.content-about h3 {
+	color: #5F0A61;
+	margin-top: 100px;
+}
+#about p{
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 25px;
+	margin-bottom: 15px;
+	color: #29022B;
+}
+
+/* ----------bagian video--------------- */
+.video {
+	padding-top: 30px;
+	padding-bottom: 75px;
+	text-align: center;
+}
+.video h2 {
+	color: #5F0A61;
+}
+.video h2:hover {
+	color: #7A1A02;
+	transition: .3s;
+}
+
+/*---------------- contact---------------- */
+.info-contact {
+	background-color: rgba(250, 132, 252, .3);
+	padding-top: 10px;
+	padding-bottom: 300px;
+	margin: 10px;
+}
+.k {
+	width: 32.32%;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	padding:20px;
+}
+.k h4 {
+	padding-bottom: 20px;
+	border-bottom: 1px solid #C66FC6;
+}
+.k p {
+	color: #29022B;
+}
+
+/*-----------bagian footer----------------- */
+.footer {
+	background-color: #5E3058;
+	padding: 50px;
+	margin-top: 50px;
+}
+.footer p {
+	color: #2E0D29;
+	text-align: center;
+	font-size: 12px;
+	padding-bottom: 10px;
+}
+
+/*-------------account----------------- */
+.account{
+	padding: 5px;
+	font-size: 15px;
+	float: left;
+}
+.account:hover {
+	background-color: #C98EF3;
+	opacity: 1;
+}
+.instagram {
+	color: #EE0C71;
+	margin-right: 5px;
+}
+.whatsapp {
+	color: #008E12;
+	margin-right: 5px;
+}
+span a {
+	color:  #D72E4A;
+	margin-right: 5px;
+}
+
+/* <=======================================HALAMAN BLOG================================================> */
+
+.banner-blog h1 {
+	color: #953802;
+	border: 1px solid #952D0B;
+	background-color:  rgba(147, 6, 7, .3);
+	background-size: cover;
+	text-align: center;
+	padding: 25px;
+}
+.banner-blog h1:hover {
+	color: #fff ;
+}
+.feature ul li{
+	margin-top: 75px ;
+	overflow: hidden;
+}
+.feature img {
+	float: left;
+	width: 400px;
+	height: 350px;
+	padding-right: 25px;
+}
+.feature h1 {
+	color: #952D0B;
+	text-align: left;
+}
+.feature span {
+	color: #952D0B;
+	font-size: 12px;
+}
+.feature p{
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 25px;
+	margin: 15px;
+
+}
+.feature p a {
+	border: 2px solid #7B357B;
+	background-color: #B659B6;
+}
+.feature p a:hover {
+	background-color: #7B357B;
+
+}
+
+
+/*--------------disclaimer------------- */
+
+.banner-disclaimer h2 {
+	border: 1px solid #A94168;
+	background-color:  rgba(147, 6, 7, .3);
+	background-size: cover;
+	text-align: center;
+	padding: 25px;
+	color: #6E2842;
+}
+.banner-disclaimer h2:hover {
+	color: #E80759;
+	transition: .3s;
+	font-size: 25px;
+
+}
+.katalog {
+	float: right;
+	margin:50px;
+	padding-left: 75px;
+}
+.content-katalog p {
+	margin-top: 75px;
+	text-align: justify;
+	text-indent: 30px;
+	line-height: 50px;
+	font-size: 18px;
+	color: #29022B;
+}
+
+.katalog h4 {
+	margin-bottom: 5px;
+	color: #A94168;
+	padding-right: 50px;
+}
+.katalog h4:hover {
+	color: #E80759;
+}
+.katalog img{
+	width: 280px;
+	height: 250px;
+}
+.katalog img:hover {
+	transform: scale(1.1);
+}
+
+/* ---------Portofolio----------- */
+.portofolio {
+	margin-top: 200px;
+}
+.portofolio h2{
+	color: #AD2B5E;
+	border-bottom: 1px solid #C66FC6; 
+	text-align: center;
+}
+.colom {
+	border: 1px;
+	padding-top: 10px;
+	width: 75%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	
+}
+.colom img {
+	width: 100%;
+	padding-bottom: 10px;
+}
+.colom a:hover img {
+	transform: scale(1.5);
+
+}
+html {
+	scroll-behavior: smooth;
+}
+
+/* <=====================================HALAMAN SUPPORT ==============================================> */
+
+input[type=text], select, textarea {
+ 	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical;
+}
+
+input[type=Email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: transparent;
+  padding: 20px;
+}
+
+
+/* ---------mengatur tampilan saat dekstop kecil/ mobile--------- */
+@media (max-width: 768px) { 
+	.mobile-menu {
+		display: block;
+	}
+	header ul {
+		display: none; /*ketika ukuran layar kecil ul hilang */
+	}
+	.text-banner {
+		max-width: 100%;
+		display: inline-block;
+	}
+	iframe{
+		width: 75%;
+	}
+	.k {
+		width: 100%;
+	}
+	.footer {
+		width: 100%;
+		display: inline-block;
+	}
+.feature img {
+		max-width: 100%;
+	}
+	.colom a {
+		width: 100%;
+	}
+ 	.katalog img {
+		width: 90%;
+		box-sizing: border-box;
+ } 
+	
